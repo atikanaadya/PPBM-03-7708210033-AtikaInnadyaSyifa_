@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center|top"
+        android:paddingTop="35dp"
+        android:background="@drawable/background">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/atas">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="500dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#d5cec3"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center|top"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nadprofile"
+                    android:paddingTop="15dp">
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="serif"
+                    android:text="ATIKA INNADYA SYIFA"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center"
+                    android:layout_centerHorizontal="true"/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="470dp"
+            android:layout_below="@+id/atas"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background3">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tengah"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center|top"
+                app:cardBackgroundColor="#d5cec3"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageButton
+                    android:id="@+id/isi"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="40dp"
+                    android:padding="10dp"
+                    android:paddingTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/isidompet">
+                </ImageButton>
+
+
+                <ImageButton
+                    android:id="@+id/kirim"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="155dp"
+                    android:padding="10dp"
+                    android:paddingTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mintadompet">
+                </ImageButton>
+
+                <EditText
+                    android:id="@+id/dompet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="top|center"
+                    android:fontFamily="serif"
+                    android:text="DOMPET"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+                <EditText
+                    android:id="@+id/uang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dompet"
+                    android:layout_gravity="center|bottom"
+                    android:fontFamily="serif"
+                    android:text="Rp: 300.000"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:id="@+id/telp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tengah"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#ffebcd"
+                android:backgroundTint="#aea18e"
+                android:hint="No. Telp :"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/telp"
+                android:background="#ffebcd"
+                android:backgroundTint="#aea18e"
+                android:layout_centerHorizontal="true"
+                android:hint="Email :"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/jk"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/email"
+                android:background="#ffebcd"
+                android:backgroundTint="#aea18e"
+                android:layout_centerHorizontal="true"
+                android:hint="Jenis Kelamin :"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/black">
+            </EditText>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

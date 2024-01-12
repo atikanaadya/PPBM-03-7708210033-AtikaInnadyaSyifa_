@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif-monospace"
+        android:padding="20dp"
+        android:text="LAUNDRY FASHION"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/lmao"
+        android:layout_below="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center">
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        <TextView
+            android:id="@+id/berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/Addon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add On"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reguler"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/lmao"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Reguler"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"/>
+    <ScrollView
+        android:layout_below="@+id/reguler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/cuci"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignLeft="@+id/setrika"
+                android:backgroundTint="#c19a6b"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Cuci - Rp.5000/kg,-"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/setrika"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuci"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#c19a6b "
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Setrika - Rp.5000/kg,-"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/setrika2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setrika"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#c19a6b "
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Cuci+Setrika - Rp.6000/kg,-"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <TextView
+                android:id="@+id/promo"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/setrika2"
+                android:layout_marginTop="28dp"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Lainnya"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/selimut"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promo"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#c19a6b "
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Selimut / Sprei"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/boneka"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selimut"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#c19a6b"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Boneka"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/sepatu"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/boneka"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#c19a6b "
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Sepatu"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/Tas"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sepatu"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#c19a6b"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Tas"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColorHint="@color/black"
+                android:layout_marginBottom="24dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

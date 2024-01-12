@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".waktuu">
+    
+    <TextView
+        android:id="@+id/lf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="45dp"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sub"
+        android:textStyle="normal"
+        android:background="#d2b48c"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:background="#d2b48c"
+        android:verticalScrollbarPosition="left"
+        android:spinnerMode="dropdown" />
+    <Button
+        android:id="@+id/Bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bayar"
+        android:backgroundTint="#d2b48c"
+        android:layout_marginTop="24dp"/>
+
+
+</LinearLayout>
